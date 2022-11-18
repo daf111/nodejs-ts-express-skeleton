@@ -1,5 +1,5 @@
 import { User } from '../../../../../../../src/Contexts/SocialNetwork/Users/domain/User';
-import { FileUserRepository } from '../../../../../../../src/Contexts/SocialNetwork/Users/infrastructure/persistence/FileCourseRepository';
+import { FileUserRepository } from '../../../../../../../src/Contexts/SocialNetwork/Users/infrastructure/persistence/FileUserRepository';
 
 describe('Save User', () => {
   it('should have a user', async () => {
