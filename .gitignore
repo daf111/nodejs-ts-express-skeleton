@@ -105,3 +105,6 @@ dist
 
 # Jest temporary directory
 .tmp
+
+# File repository data
+*.repo

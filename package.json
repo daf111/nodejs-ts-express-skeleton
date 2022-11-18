@@ -13,6 +13,7 @@
   "author": "Daniel A. Fernandez",
   "license": "ISC",
   "dependencies": {
+    "bson": "^4.7.0",
     "express": "^4.18.2",
     "express-promise-router": "^4.1.1",
     "http-status": "^1.5.3"
