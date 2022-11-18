@@ -1,14 +1,22 @@
 import express from 'express';
 import { registerRoutes } from './routes';
 
-const app = express();
-const port = 3000;
+export class App {
+  _app = express();
+  _port = 3000;
 
-app.use(express.json());
-const router = express.Router();
-app.use(router);
-registerRoutes(router);
+  start() {
+    this._app.use(express.json());
+    const router = express.Router();
+    this._app.use(router);
+    registerRoutes(router);
 
-app.listen(port, () => {
-  return console.log(`Express is listening at http://localhost:${port}`);
-});
+    this._app.listen(this._port, () => {
+      return console.log(`Express is listening at http://localhost:${this._port}`);
+    });
+  }
+
+  get app() {
+    return this._app;
+  }
+}
