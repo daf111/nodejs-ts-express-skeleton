@@ -9,10 +9,11 @@
     "test:unit": "jest",
     "test:features": "cucumber-js -p app",
     "lint": "npx eslint . --ext .ts",
-    "build": "npm run build:clean && npm run build:tsc && npm run build:di",
-    "build:tsc": "tsc -p tsconfig.prod.json",
-    "build:di": "copy 'src/**/*.{json,yaml,html,png}' dist/src",
-    "build:clean": "rm -r dist; exit 0"
+    "build": "npm run build:clean && npm run build:tsc",
+    "build:tsc": "tsc",
+    "build:clean": "rm -r dist; exit 0",
+    "preinstall": "rm -f node_modules/@",
+    "postinstall": "ln -s `pwd`/src node_modules/@"
   },
   "author": "Daniel A. Fernandez",
   "license": "MIT",

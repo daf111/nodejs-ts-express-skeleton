@@ -1,4 +1,4 @@
-import {BeforeAll, Given, Then} from '@cucumber/cucumber';    
+import {BeforeAll, AfterAll, Given, Then} from '@cucumber/cucumber';    
 import request from 'supertest';
 import { App } from '../../../../src/app/app';
 
@@ -17,3 +17,7 @@ BeforeAll(async () => {
   application = new App();
   application.start();
 });
+
+AfterAll(async () => {
+  application.stop();
+})
