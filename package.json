@@ -1,0 +1,24 @@
+{
+  "name": "social_network_nodejs",
+  "version": "1.0.0",
+  "description": "Sistema de red social desarrollado en NodeJS siguiendo prácticas\u001b[C\u001b[C\u001b[C\u001b[Crecomendaciones SOLID, estrategia y táctica DDD, Arquitectura Hexagonal y TDD",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/app.js",
+    "test": "test",
+    "lint": "npx eslint . --ext .ts"
+  },
+  "author": "Daniel A. Fernandez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "eslint": "^8.27.0",
+    "eslint-plugin-react": "^7.31.10",
+    "typescript": "^4.9.3"
+  }
+}
