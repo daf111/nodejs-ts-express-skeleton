@@ -11,7 +11,7 @@
     "lint": "npx eslint . --ext .ts",
     "build": "npm run build:clean && npm run build:tsc && npm run build:di",
     "build:tsc": "tsc",
-    "build:di": "cp 'src/**/*.{json,yaml,html,png}'* dist/src",
+    "build:di": "cp src/**/*.{json,yaml,html,png} dist/src",
     "build:clean": "rm -r dist; exit 0",
     "preinstall": "rm -f node_modules/@",
     "postinstall": "ln -s `pwd`/src node_modules/@"
